@@ -11,11 +11,112 @@ figure {
 }
 
 // Your assignment code starts here
-.menu {
+    .menu {
 	display: grid;
-	grid-template-columns: 21% 21% 21% 21% 16%;
+	grid-template-rows: repeat(2, 200px);
+	grid-column-gap: 5px;
+	}
+	.thumbnails {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 175px);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	align-items: center;
+	float: left;
+	}
+.thumbnails img {
+	width: 100%;
 }
+	.discover-menu {
+	width: 400px;
+	height: 400px;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	.discover-menu h2 {
+		font-family: 'Marck Script', cursive;
+		color: #DB8D33;
+		font-size: 35px;
+		margin: 2px;
+	}
+	.discover-menu h3 {
+		font-family: 'Roboto', sans-serif;
+		color: black;
+		font-size: 40px;
+		margin: 2px;
+	}
+	.discover-menu p {
+		font-family: 'Dosis', sans-serif;
+		color: #575757;
+		font-size: 20px;
+		width: 300px;
+		text-align: center;
+		margin: 5px;
+	}
+	.discover-menu a {
+		font-family: 'Roboto', sans-serif;
+		color:#DB8D33;
+		text-transform: uppercase;
+		text-decoration: bold;
+		font-size: 14px;
+	}
+	.discover-menu img {
+		height: 25px;
+	}
 @media only screen and (min-width: 1024px) {
   // Your assignment's code for large screens starts here
-  
+    .menu {
+	display: grid;
+	grid-template-columns: repeat(2, 500px);
+	grid-column-gap: 10px;
+	}
+	.thumbnails {
+	width: 500px;
+	display: grid;
+	grid-template-columns: repeat(2, 250px);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	float: left;
+	}
+	.discover-menu {
+	width: 400px;
+	height: 400px;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	}
+	.discover-menu h2 {
+		font-family: 'Marck Script', cursive;
+		color: #DB8D33;
+		font-size: 35px;
+		margin: 2px;
+	}
+	.discover-menu h3 {
+		font-family: 'Roboto', sans-serif;
+		color: black;
+		font-size: 40px;
+		margin: 2px;
+	}
+	.discover-menu p {
+		font-family: 'Dosis', sans-serif;
+		color: #575757;
+		font-size: 20px;
+		width: 300px;
+		text-align: center;
+		margin: 5px;
+	}
+	.discover-menu a {
+		font-family: 'Roboto', sans-serif;
+		color:#DB8D33;
+		text-transform: uppercase;
+		text-decoration: bold;
+		font-size: 14px;
+	}
+	.discover-menu img {
+		height: 25px;
+	}
 }
